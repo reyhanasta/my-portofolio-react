@@ -12,9 +12,9 @@ const projects: Project[] = [
   {
     title: "Koperasi System",
     description:
-      "Sistem koperasi untuk orang tua, mencakup manajemen simpan pinjam dan laporan keuangan lengkap dengan dashboard monitoring.",
-    image: "/projects/koperasi-system.jpg",
-    tags: ["Laravel", "MySQL", "Bootstrap", "PHP"],
+      "Sistem koperasi Simpan Pinjam, mencakup manajemen simpan pinjam dan laporan keuangan lengkap dengan dashboard monitoring.",
+    image: "/projects/koperasi.png",
+    tags: ["Laravel", "MySQL", "Tailwind CSS", "PHP"],
     // demoUrl: "#",
     // githubUrl: "#",
     active: true,
