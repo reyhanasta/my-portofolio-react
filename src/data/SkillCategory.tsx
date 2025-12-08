@@ -9,8 +9,14 @@ import {
   SiChartdotjs,
   SiMikrotik,
 } from "react-icons/si";
-import { FaServer, FaNetworkWired, FaPalette } from "react-icons/fa";
-import { MdLocalHospital } from "react-icons/md";
+import {
+  FaServer,
+  FaNetworkWired,
+  FaPalette,
+  FaGithub,
+  FaLaptopMedical,
+} from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa6";
 
 interface Skill {
   name: string;
@@ -57,7 +63,15 @@ const skillCategories: SkillCategory[] = [
     skills: [
       {
         name: "SIMRS (Khanza)",
-        icon: <MdLocalHospital className="text-[#a71717]" />,
+        icon: <FaLaptopMedical className="text-[#ff0404]" />,
+      },
+      {
+        name: "Git Version Control",
+        icon: <FaGitAlt className="text-[#f15912]" />,
+      },
+      {
+        name: "Github",
+        icon: <FaGithub className="text-[#fdfdfd]" />,
       },
       {
         name: "Networking",

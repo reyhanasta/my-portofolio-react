@@ -12,4 +12,4 @@ gacha aslinya untuk keperluan hiburan. Screenshot: [placeholder] Tech Stack: Vue
 Demo/GitHub: placeholder 3. Outpatient Reporting System Sistem laporan rawat jalan untuk
 klinik tempat bekerja. Screenshot: [placeholder] Tech Stack: Laravel, MySQL Demo/GitHub:
 placeholder 4. Fast Claim (BPJS Claim Organizer) Aplikasi web untuk mengatur dokumen klaim
-BPJS secara efisien. Screenshot: [placeholder] Tech Stack: Laravel, JS Demo/GitHub
+BPJS secara efisien. Screenshot: [placeholder] Tech Stack: Laravel, JS Demo/GitHubc

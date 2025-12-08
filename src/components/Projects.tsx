@@ -42,7 +42,7 @@ const Projects = () => {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-background/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-linear-to-t from-background/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
 
                   <CardHeader>
@@ -67,7 +67,7 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    <div className="flex gap-3">
+                    <div className="grid grid-cols-2 gap-3 pt-4">
                       {project.demoUrl && (
                         <Button
                           size="sm"

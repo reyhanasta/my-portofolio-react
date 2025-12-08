@@ -12,37 +12,35 @@ const projects: Project[] = [
   {
     title: "Koperasi System",
     description:
-      "Sistem koperasi Simpan Pinjam, mencakup manajemen simpan pinjam dan laporan keuangan lengkap dengan dashboard monitoring.",
+      "Sistem manajemen koperasi dengan standar perbankan, dilengkapi modul simpan pinjam dan akuntansi terintegrasi untuk efisiensi operasional BTM.",
     image: "/projects/koperasi.png",
     tags: ["Laravel", "MySQL", "Tailwind CSS", "PHP"],
-    // demoUrl: "#",
-    // githubUrl: "#",
+
     active: true,
   },
   {
     title: "RAJAL Reporting System",
     description:
-      "Sistem laporan rawat jalan untuk klinik tempat bekerja dengan fitur filtering, export, dan visualisasi data pasien.",
+      "Aplikasi reporting otomatis yang terintegrasi dengan SIMRS Khanza, menghasilkan laporan rawat jalan dalam format Excel sesuai kebutuhan klinik.",
     image: "/projects/laporan-kubr.png",
-    tags: ["Laravel", "MySQL", "Chart.js","Tailwind CSS"],
-    // demoUrl: "#",
+    tags: ["Laravel", "MySQL", "Chart.js", "Tailwind CSS"],
+
     githubUrl: "https://github.com/reyhanasta/kubr-report.git",
     active: true,
   },
   {
     title: "Fast Claim (BPJS Claim Organizer)",
     description:
-      "Aplikasi web untuk mengatur dan mengelola dokumen klaim BPJS secara efisien dengan sistem tracking dan reminder otomatis.",
+      "Tool automation untuk menyusun struktur folder dan merge file klaim BPJS Kesehatan sesuai standar SOP, mempercepat proses klaim hingga 3x lipat.",
     image: "/projects/fast-claim.png",
-    tags: ["Laravel", "JavaScript", "MySQL","Tailwind CSS"],
-    // demoUrl: "#",
-    // githubUrl: "#",
+    tags: ["Laravel", "JavaScript", "MySQL", "Tailwind CSS"],
+
     active: true,
   },
   {
     title: "Shift Scheduler",
     description:
-      "Aplikasi penjadwalan shift karyawan dengan fitur notifikasi dan manajemen cuti terintegrasi.",
+      "Aplikasi penjadwalan shift untuk petugas rekam medis dengan fitur kalender interaktif, notifikasi, dan swap shift yang mobile-responsive.",
     image: "/projects/shift-scheduler.png",
     tags: ["Vue", "Node.js", "Express", "JavaScript", "Tailwind CSS", "MySQL"],
     demoUrl: "https://shift.astareyhan.my.id/",

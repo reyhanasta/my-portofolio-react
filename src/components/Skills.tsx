@@ -19,9 +19,9 @@ export default function Skills() {
                   {category.category}
                 </h4>
                 <div
-                  className={`p-6 rounded-xl border bg-gradient-to-br ${category.color}`}
+                  className={`p-6 rounded-xl border bg-linear-to-br ${category.color}`}
                 >
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
                     {category.skills.map((skill) => (
                       <div
                         key={skill.name}

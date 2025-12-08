@@ -1,28 +1,6 @@
-import { Palette, Zap, Stethoscope } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
+import features from "@/data/FeatureList";
 const About = () => {
-  const features = [
-    {
-      icon: Stethoscope,
-      title: "Healthcare IT Builder",
-      description:
-        "2+ years menjaga SIMRS, jaringan, dan server klinik tetap stabil dan siap pakai.",
-    },
-    {
-      icon: Zap,
-      title: "Performance",
-      description:
-        "Terobsesi pada waktu muat cepat, optimasi, dan efisiensi setiap request.",
-    },
-    {
-      icon: Palette,
-      title: "Product-Minded Engineer",
-      description:
-        "Menggabungkan coding dan konten visual agar pengalaman terasa jelas, praktis, dan menarik.",
-    },
-  ];
-
   return (
     <section className="py-24 ">
       <div className="container mx-auto px-4">
@@ -30,16 +8,18 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             About Me
           </h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            Saya Reyhan, software engineer dengan fokus healthcare IT dan
-            optimasi. Selama 4+ tahun di klinik saya mengelola SIMRS, jaringan,
-            dan server agar operasional tetap lancar. Saya membangun aplikasi
-            modern (Laravel, Vue, React), mengutamakan performa, dan menikmati
-            menyeimbangkan sistem seperti game balance maupun web performance.
+          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            Halo! Saya Reyhan, seorang IT Professional dengan passion besar di
+            bidang software development dan teknologi kesehatan. Selama 4 tahun
+            terakhir, saya berkecimpung di dunia IT Kesehatan, membangun dan
+            mengelola sistem informasi yang mendukung pelayanan medis yang lebih
+            baik. Perjalanan saya dimulai dari ketertarikan mendalam pada
+            programming, yang kemudian berkembang menjadi karir yang memadukan
+            teknologi dengan impact sosial.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
