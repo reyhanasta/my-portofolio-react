@@ -1,5 +1,6 @@
 import { useTheme } from "@/contexts/ThemeContext";
 import { Moon, Sun, Github } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -43,7 +44,7 @@ export default function Navbar() {
               className="p-2 rounded-lg hover:bg-accent transition-colors"
               aria-label="GitHub Profile"
             >
-              <Github className="w-5 h-5 text-foreground" />
+              <FaGithub className="w-5 h-5 text-foreground" />
             </a>
           </div>
         </div>

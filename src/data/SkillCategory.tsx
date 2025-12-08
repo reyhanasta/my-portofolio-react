@@ -71,7 +71,7 @@ const skillCategories: SkillCategory[] = [
       },
       {
         name: "Github",
-        icon: <FaGithub className="text-[#fdfdfd]" />,
+        icon: <FaGithub className="text-foreground" />,
       },
       {
         name: "Networking",

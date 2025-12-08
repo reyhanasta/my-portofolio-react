@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Mail, Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -30,7 +31,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-card border border-border rounded-lg hover:border-primary transition-colors"
           >
-            <Github className="w-5 h-5" />
+            <FaGithub className="w-5 h-5" />
             GitHub
           </a>
           <a
@@ -39,7 +40,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-card border border-border rounded-lg hover:border-primary transition-colors"
           >
-            <Linkedin className="w-5 h-5" />
+            <FaLinkedin className="w-5 h-5" />
             LinkedIn
           </a>
         </div>

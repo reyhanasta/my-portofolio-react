@@ -7,8 +7,9 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import projects from "../data/ProjectList";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -49,7 +50,7 @@ const Projects = () => {
                     <CardTitle className="text-foreground group-hover:text-primary transition-colors">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="line-clamp-2">
+                    <CardDescription className="line-clamp-4">
                       {project.description}
                     </CardDescription>
                   </CardHeader>
@@ -67,7 +68,7 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    <div className="grid grid-cols-2 gap-3 pt-4">
+                    <div className="grid grid-cols-2 gap-3 pt-2">
                       {project.demoUrl && (
                         <Button
                           size="sm"
@@ -97,7 +98,7 @@ const Projects = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <Github className="w-4 h-4 mr-2" />
+                            <FaGithub className="w-4 h-4 mr-2" />
                             Code
                           </a>
                         </Button>
