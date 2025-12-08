@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center px-4 py-20"
+      className="min-h-screen flex items-center justify-center px-4 py-20   overflow-hidden bg-linear-to-t from-primary/7 via-transparent to-transparent"
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 fade-in">
@@ -57,7 +57,7 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-border">
+        <div className="mt-20 pt-8 border-t border-border ">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Reyhan. Built with React & Tailwind
             CSS.

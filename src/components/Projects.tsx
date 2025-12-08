@@ -14,10 +14,10 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 bg-linear-to-b from-transparent via-primary/5 to-transparent"
+      className="py-24 bg-linear-to-b from-transparent via-primary/5 to-transparent "
     >
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16 fade-in">
+        <div className="max-w-4xl mx-auto text-center mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Featured Projects
           </h2>
@@ -27,7 +27,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map(
             (project, index) =>
               project.active && (

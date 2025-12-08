@@ -1,7 +1,7 @@
 Nama: Reyhan Tagline/Job Title: Software Engineer · Healthcare IT · Optimization Enthusiast Bio
-Singkat: Reyhan adalah seorang software engineer dengan pengalaman di dunia klinik selama 2
+Singkat: Reyhan adalah seorang software engineer dengan pengalaman di dunia klinik selama 4
 tahun, fokus pada pengelolaan SIMRS, jaringan, server, dan pengembangan aplikasi internal.
-Memiliki ketertarikan kuat pada optimization, SEO teknis, game balance analysis, dan web
+Memiliki ketertarikan kuat pada optimization, game balance analysis, dan web
 performance. Skills: - Web Development (Laravel, Vue, React) - SIMRS Management (Khanza) 
 Networking & Mikrotik - Server Administration - SEO & Web Performance Optimization - Game
 Balance Analysis - Algorithm & Code Optimization - Content Creation (Poster, IG Content)

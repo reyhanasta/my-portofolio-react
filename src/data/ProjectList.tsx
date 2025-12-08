@@ -23,18 +23,18 @@ const projects: Project[] = [
     title: "RAJAL Reporting System",
     description:
       "Sistem laporan rawat jalan untuk klinik tempat bekerja dengan fitur filtering, export, dan visualisasi data pasien.",
-    image: "/projects/outpatient-report.jpg",
-    tags: ["Laravel", "MySQL", "Chart.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-    active: false,
+    image: "/projects/laporan-kubr.png",
+    tags: ["Laravel", "MySQL", "Chart.js","Tailwind CSS"],
+    // demoUrl: "#",
+    githubUrl: "https://github.com/reyhanasta/kubr-report.git",
+    active: true,
   },
   {
     title: "Fast Claim (BPJS Claim Organizer)",
     description:
       "Aplikasi web untuk mengatur dan mengelola dokumen klaim BPJS secara efisien dengan sistem tracking dan reminder otomatis.",
     image: "/projects/fast-claim.png",
-    tags: ["Laravel", "JavaScript", "MySQL"],
+    tags: ["Laravel", "JavaScript", "MySQL","Tailwind CSS"],
     // demoUrl: "#",
     // githubUrl: "#",
     active: true,
@@ -49,4 +49,5 @@ const projects: Project[] = [
     active: true,
   },
 ];
+
 export default projects;

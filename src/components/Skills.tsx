@@ -1,12 +1,12 @@
 import skillCategories from "@/data/SkillCategory";
 
-export default function About() {
+export default function Skills() {
   return (
     <section
-      id="about"
+      id="skills"
       className="min-h-screen flex items-center justify-center px-4 py-20"
     >
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="max-w-5xl mx-auto w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 fade-in">
           Skill & Expertise
         </h2>
