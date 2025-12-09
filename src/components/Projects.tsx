@@ -24,8 +24,8 @@ const Projects = () => {
             My Projects
           </h2>
           <p className="text-base md:text-lg text-muted-foreground px-4">
-            Berisikan project yang pernah saya kerjakan baik secara profesional
-            ataupun personal.
+            Berisikan beberapa proyek yang pernah saya kerjakan baik secara
+            profesional ataupun personal.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const Projects = () => {
                     <CardTitle className="text-lg md:text-xl text-foreground group-hover:text-primary transition-colors">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="line-clamp-3 md:line-clamp-4 text-sm">
+                    <CardDescription className="line-clamp-3 md:line-clamp-4 text-sm text-muted-foreground">
                       {project.description}
                     </CardDescription>
                   </CardHeader>

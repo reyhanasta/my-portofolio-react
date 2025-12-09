@@ -2,21 +2,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import features from "@/data/FeatureList";
 const About = () => {
   return (
-    <section className="py-24 ">
+    <section id="about" className="py-24 ">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             About Me
           </h2>
-          <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            Software Engineer yang senang membantu sekitar dengan solusi
-            digital. Selamat 4 tahun sudah mengabdi di salah satu fasilitas
-            kesehatan tingkat lanjut di Pekanbaru. Memberikan gambaran baru
-            bagaimana teknologi dapat membantu operasional rumah sakit secara
-            digitalisasi. Dan sekarang fokus mengembangkan skill di bidang web
-            development terutama di teknologi frontend dan backend modern.
-            dengan harapan bisa membantu lebih banyak orang lagi melalui solusi
-            digital.
+          <p className="text-md text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            Selamat 4 tahun sudah mengabdi di salah satu fasilitas kesehatan
+            tingkat lanjut di Pekanbaru. Memberikan gambaran baru bagaimana
+            teknologi dapat membantu operasional rumah sakit secara
+            digitalisasi.
           </p>
         </div>
 

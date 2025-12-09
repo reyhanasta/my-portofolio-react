@@ -16,19 +16,23 @@ interface Project {
 
 const projects: Project[] = [
   {
-    slug: "koperasi-system",
-    title: "Koperasi System",
+    slug: "koperasi-management-system",
+    title: "Koperasi Management System",
     description:
       "Sistem manajemen koperasi dengan standar perbankan, dilengkapi modul simpan pinjam dan akuntansi terintegrasi untuk efisiensi operasional BTM.",
     fullDescription:
-      "Sistem manajemen koperasi yang dibangun khusus untuk orang tua saya yang mengelola BTM (Baitul Mal wat Tamwil). Aplikasi ini mengadopsi standar perbankan dalam pengelolaan simpan pinjam, dengan modul akuntansi yang terintegrasi penuh. Sistem ini membantu mengelola data anggota, transaksi harian, perhitungan bunga otomatis, dan menghasilkan laporan keuangan yang akurat dan real-time.",
-    image: "/projects/koperasi.png",
+      "Sistem manajemen koperasi yang dibangun khusus untuk orang tua saya yang mengelola koperasi BTM . Aplikasi ini mengadopsi standar perbankan dalam pengelolaan simpan pinjam, dengan modul akuntansi yang terintegrasi penuh. Sistem ini membantu mengelola data anggota, transaksi harian, perhitungan bunga otomatis, dan menghasilkan laporan keuangan yang akurat dan real-time.",
+    image: "/projects/koperasi/thumbnail.png",
     images: [
-      "/projects/koperasi.png",
+      "/projects/koperasi/thumbnail.png",
       "/projects/koperasi/dashboard.png",
-      "/projects/koperasi/anggota.png",
-      "/projects/koperasi/simpanan.png",
-      "/projects/koperasi/laporan.png",
+      "/projects/koperasi/nasabah.png",
+      "/projects/koperasi/nasabah-detail.png",
+      "/projects/koperasi/pembiayaan.png",
+      "/projects/koperasi/detail-pembiayaan.png",
+      "/projects/koperasi/jurnal-umum.png",
+      "/projects/koperasi/neraca.png",
+      "/projects/koperasi/tutup-kas.png",
     ],
     tags: ["Laravel", "MySQL", "Tailwind CSS", "PHP"],
     features: [
@@ -44,19 +48,17 @@ const projects: Project[] = [
     active: true,
   },
   {
-    slug: "rajal-reporting-system",
-    title: "RAJAL Reporting System",
+    slug: "auto-report",
+    title: "AutoReport (SIMRS Khanza Integration)",
     description:
       "Aplikasi reporting otomatis yang terintegrasi dengan SIMRS Khanza, menghasilkan laporan rawat jalan dalam format Excel sesuai kebutuhan klinik.",
     fullDescription:
       "Sistem pelaporan otomatis untuk rawat jalan yang terintegrasi langsung dengan database SIMRS Khanza. Aplikasi ini menggantikan proses manual pembuatan laporan yang memakan waktu 2-3 jam menjadi hanya beberapa klik. Data pasien, diagnosa, tindakan, dan pembayaran otomatis terekstrak dan diformat sesuai standar pelaporan dinas kesehatan.",
-    image: "/projects/laporan-kubr.png",
+    image: "/projects/auto-report/thumbnail.png",
     images: [
-      "/projects/laporan-kubr.png",
-      "/projects/rajal/dashboard.png",
-      "/projects/rajal/filter.png",
-      "/projects/rajal/export.png",
-      "/projects/rajal/chart.png",
+      "/projects/auto-report/thumbnail.png",
+      "/projects/auto-report/dashboard.png",
+      "/projects/auto-report/export.jpeg",
     ],
     tags: ["Laravel", "MySQL", "Chart.js", "Tailwind CSS"],
     features: [
@@ -74,7 +76,7 @@ const projects: Project[] = [
       { label: "Penghematan Waktu", value: "2-3 jam → 5 menit" },
       { label: "Query Time", value: "< 2 detik" },
     ],
-    active: true,
+    active: false,
   },
   {
     slug: "fast-claim",
@@ -86,10 +88,15 @@ const projects: Project[] = [
     image: "/projects/fast-claim/thumbnail.png",
     images: [
       "/projects/fast-claim/thumbnail.png",
-      "/projects/fast-claim/upload-sep.png",
-      "/projects/fast-claim/organize.png",
-      "/projects/fast-claim/merge.png",
-      "/projects/fast-claim/result.png",
+      "/projects/fast-claim/login-page.png",
+      "/projects/fast-claim/dashboard.png",
+      "/projects/fast-claim/input-page.png",
+      "/projects/fast-claim/form-1.png",
+      "/projects/fast-claim/form-2.png",
+      "/projects/fast-claim/folder-page.png",
+      "/projects/fast-claim/backup-dashboard.png",
+      "/projects/fast-claim/backup-folder.png",
+      "/projects/fast-claim/storage-settings.png",
     ],
     tags: ["Laravel", "JavaScript", "MySQL", "Tailwind CSS"],
     features: [
@@ -139,7 +146,7 @@ const projects: Project[] = [
       { label: "Mobile Usage", value: "85%" },
       { label: "Response Time", value: "< 1 detik" },
     ],
-    active: true,
+    active: false,
   },
 ];
 
