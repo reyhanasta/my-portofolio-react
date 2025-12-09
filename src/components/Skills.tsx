@@ -21,11 +21,11 @@ export default function Skills() {
                 <div
                   className={`p-6 rounded-xl border bg-linear-to-br ${category.color}`}
                 >
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                     {category.skills.map((skill) => (
                       <div
                         key={skill.name}
-                        className="flex items-center gap-3 p-3 rounded-lg bg-background/50 backdrop-blur-sm border border-border hover:border-primary hover:bg-background/80 transition-all hover:-translate-y-1 group"
+                        className="flex items-center gap-3 p-3 rounded-lg bg-background/80 backdrop-blur-sm border border-border hover:border-primary hover:bg-background/80 transition-all hover:-translate-y-1 group"
                       >
                         <span className="text-3xl group-hover:scale-110 transition-transform">
                           {skill.icon}

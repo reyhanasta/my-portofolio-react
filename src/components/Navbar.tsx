@@ -1,5 +1,5 @@
 import { useTheme } from "@/contexts/ThemeContext";
-import { Moon, Sun, Github } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 export default function Navbar() {

@@ -7,28 +7,29 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
 import projects from "../data/ProjectList";
 import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 bg-linear-to-b from-transparent via-primary/5 to-transparent "
+      className="py-16 md:py-24 bg-linear-to-b from-transparent via-primary/5 to-transparent"
     >
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16 fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Featured Projects
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16 fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
+            My Projects
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Portfolio project yang telah saya kerjakan dengan berbagai teknologi
-            dan solusi
+          <p className="text-base md:text-lg text-muted-foreground px-4">
+            Berisikan project yang pernah saya kerjakan baik secara profesional
+            ataupun personal.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
           {projects.map(
             (project, index) =>
               project.active && (
@@ -47,10 +48,10 @@ const Projects = () => {
                   </div>
 
                   <CardHeader>
-                    <CardTitle className="text-foreground group-hover:text-primary transition-colors">
+                    <CardTitle className="text-lg md:text-xl text-foreground group-hover:text-primary transition-colors">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="line-clamp-4">
+                    <CardDescription className="line-clamp-3 md:line-clamp-4 text-sm">
                       {project.description}
                     </CardDescription>
                   </CardHeader>
@@ -61,48 +62,61 @@ const Projects = () => {
                         <Badge
                           key={tagIndex}
                           variant="outline"
-                          className="bg-primary/10 hover:bg-primary/20 transition-colors"
+                          className="bg-primary/10 hover:bg-primary/20 transition-colors text-xs"
                         >
                           {tag}
                         </Badge>
                       ))}
                     </div>
 
-                    <div className="grid grid-cols-2 gap-3 pt-2">
-                      {project.demoUrl && (
+                    <div className="flex flex-col gap-2 pt-2">
+                      <Link to={`/projects/${project.slug}`} className="w-full">
                         <Button
                           size="sm"
                           variant="default"
-                          className="flex-1 bg-primary hover:bg-primary/90"
-                          asChild
+                          className="w-full bg-primary hover:bg-primary/90 min-h-10"
                         >
-                          <a
-                            href={project.demoUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <ExternalLink className="w-4 h-4 mr-2" />
-                            Demo
-                          </a>
+                          <ArrowRight className="w-4 h-4 mr-2" />
+                          Lihat Detail
                         </Button>
-                      )}
-                      {project.githubUrl && (
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="flex-1 hover:bg-accent"
-                          asChild
-                        >
-                          <a
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                      </Link>
+
+                      <div className="grid grid-cols-2 gap-2">
+                        {project.demoUrl && (
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="w-full hover:bg-accent min-h-10"
+                            asChild
                           >
-                            <FaGithub className="w-4 h-4 mr-2" />
-                            Code
-                          </a>
-                        </Button>
-                      )}
+                            <a
+                              href={project.demoUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              Demo
+                            </a>
+                          </Button>
+                        )}
+                        {project.githubUrl && (
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="w-full hover:bg-accent min-h-10"
+                            asChild
+                          >
+                            <a
+                              href={project.githubUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FaGithub className="w-4 h-4 mr-2" />
+                              Code
+                            </a>
+                          </Button>
+                        )}
+                      </div>
                     </div>
                   </CardContent>
                 </Card>

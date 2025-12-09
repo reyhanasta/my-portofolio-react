@@ -5,7 +5,7 @@ const features = [
     icon: Stethoscope,
     title: "Healthcare System",
     description:
-      "Berpengalaman mengelola SIMRS Khanza dan memahami kebutuhan spesifik industri kesehatan",
+      "Berpengalaman mengelola SIMRS Khanza yang merupakan salah satu SIMRS opensource terpopuler yang ada di indonesia.",
   },
   {
     icon: FolderCode,
@@ -23,7 +23,7 @@ const features = [
     icon: Palette,
     title: "Creative Side",
     description:
-      "Content creation untuk poster dan konten Instagram sederhana.",
+      "Content creation untuk kebutuhan media baik fisik maupun digital.",
   },
 ];
 export default features;

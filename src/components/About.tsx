@@ -4,18 +4,19 @@ const About = () => {
   return (
     <section className="py-24 ">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             About Me
           </h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            Halo! Saya Reyhan, seorang IT Professional dengan passion besar di
-            bidang software development dan teknologi kesehatan. Selama 4 tahun
-            terakhir, saya berkecimpung di dunia IT Kesehatan, membangun dan
-            mengelola sistem informasi yang mendukung pelayanan medis yang lebih
-            baik. Perjalanan saya dimulai dari ketertarikan mendalam pada
-            programming, yang kemudian berkembang menjadi karir yang memadukan
-            teknologi dengan impact sosial.
+            Software Engineer yang senang membantu sekitar dengan solusi
+            digital. Selamat 4 tahun sudah mengabdi di salah satu fasilitas
+            kesehatan tingkat lanjut di Pekanbaru. Memberikan gambaran baru
+            bagaimana teknologi dapat membantu operasional rumah sakit secara
+            digitalisasi. Dan sekarang fokus mengembangkan skill di bidang web
+            development terutama di teknologi frontend dan backend modern.
+            dengan harapan bisa membantu lebih banyak orang lagi melalui solusi
+            digital.
           </p>
         </div>
 
@@ -25,7 +26,7 @@ const About = () => {
             return (
               <Card
                 key={index}
-                className="border-border hover:shadow-lg transition-shadow duration-300"
+                className="border-border  hover:shadow-2xl  hover:shadow-primary/10 transition-shadow duration-300"
               >
                 <CardContent className="pt-8 text-center space-y-4">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">

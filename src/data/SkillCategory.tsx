@@ -1,22 +1,16 @@
 import {
   SiLaravel,
-  SiVuedotjs,
   SiReact,
   SiMysql,
   SiJavascript,
   SiTailwindcss,
   SiBootstrap,
-  SiChartdotjs,
   SiMikrotik,
+  SiPhp,
 } from "react-icons/si";
-import {
-  FaServer,
-  FaNetworkWired,
-  FaPalette,
-  FaGithub,
-  FaLaptopMedical,
-} from "react-icons/fa";
+import { FaPalette, FaLaptopMedical, FaDocker, FaNodeJs } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa6";
+import { IoLogoVue } from "react-icons/io5";
 
 interface Skill {
   name: string;
@@ -35,14 +29,13 @@ const skillCategories: SkillCategory[] = [
     color: "from-blue-500/20 to-cyan-500/20 border-blue-500/30",
     skills: [
       { name: "React", icon: <SiReact className="text-[#61DAFB]" /> },
-      { name: "Vue.js", icon: <SiVuedotjs className="text-[#42B883]" /> },
+      { name: "Vue.js", icon: <IoLogoVue className="text-[#42B883]" /> },
       { name: "JavaScript", icon: <SiJavascript className="text-[#F7DF1E]" /> },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss className="text-[#06B6D4]" />,
       },
       { name: "Bootstrap", icon: <SiBootstrap className="text-[#7952B3]" /> },
-      { name: "Chart.js", icon: <SiChartdotjs className="text-[#FF6384]" /> },
     ],
   },
   {
@@ -51,10 +44,8 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Laravel", icon: <SiLaravel className="text-[#FF2D20]" /> },
       { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
-      {
-        name: "Server Admin",
-        icon: <FaServer className="text-slate-400" />,
-      },
+      { name: "PHP", icon: <SiPhp className="text-[#777BB4]" /> },
+      { name: "NodeJs", icon: <FaNodeJs className="text-[#339933]" /> },
     ],
   },
   {
@@ -66,16 +57,13 @@ const skillCategories: SkillCategory[] = [
         icon: <FaLaptopMedical className="text-[#ff0404]" />,
       },
       {
-        name: "Git Version Control",
+        name: "Git ",
         icon: <FaGitAlt className="text-[#f15912]" />,
       },
+
       {
-        name: "Github",
-        icon: <FaGithub className="text-foreground" />,
-      },
-      {
-        name: "Networking",
-        icon: <FaNetworkWired className="text-green-400" />,
+        name: "Docker",
+        icon: <FaDocker className="text-[#0db7ed]" />,
       },
       { name: "Mikrotik", icon: <SiMikrotik className="text-blue-400" /> },
       {

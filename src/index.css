@@ -162,3 +162,27 @@ html {
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+/* Pulse animation delays for loading dots */
+.delay-75 {
+  animation-delay: 75ms;
+}
+
+.delay-150 {
+  animation-delay: 150ms;
+}
+
+/* Scrollbar styling */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-thumb-primary::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 3px;
+}
+
+.scrollbar-track-accent::-webkit-scrollbar-track {
+  background-color: var(--accent);
+  border-radius: 3px;
+}
