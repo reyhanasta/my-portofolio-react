@@ -19,7 +19,7 @@ interface Skill {
 
 interface SkillCategory {
   category: string;
-  skills: Skill[];
+  skills: Array<Skill>;
   color: string;
 }
 

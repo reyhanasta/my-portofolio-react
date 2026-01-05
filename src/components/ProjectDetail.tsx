@@ -27,7 +27,8 @@ export default function ProjectDetail() {
     <div className="min-h-screen pt-16 md:pt-20 pb-12 md:pb-16">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Back Button */}
-        <button
+        <Button
+          variant={"ghost"}
           onClick={() => {
             navigate("/");
             setTimeout(() => {
@@ -41,7 +42,7 @@ export default function ProjectDetail() {
         >
           <ArrowLeft className="w-4 h-4" />
           <span className="text-sm md:text-base">Kembali ke Projects</span>
-        </button>
+        </Button>
 
         {/* Hero Section */}
         <div className="mb-8 md:mb-12">

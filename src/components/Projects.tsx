@@ -35,7 +35,7 @@ const Projects = () => {
               project.active && (
                 <Card
                   key={index}
-                  className="overflow-hidden border-border hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 group fade-in-delay-1 hover:-translate-y-2"
+                  className="overflow-hidden border-border hover:shadow-2xl hover:shadow-primary/10 transition-transform duration-300 group fade-in-delay-1 hover:-translate-y-2"
                 >
                   <div className="relative overflow-hidden aspect-video bg-linear-to-br from-primary/20 to-emerald-500/20">
                     <img

@@ -22,7 +22,20 @@ export default function Navbar() {
             onClick={() => scrollToSection("hero")}
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            <img src="/logo_nav.png" alt="Reyhan Logo" className="w-15 h-9" />
+            <img
+              src="/logo_nav.png"
+              alt="Reyhan Logo"
+              className="w-auto h-6 md:h-9 object-contain"
+              loading="eager"
+              onError={(e) => {
+                // Fallback jika gambar gagal load
+                e.currentTarget.style.display = "none";
+                e.currentTarget.insertAdjacentHTML(
+                  "afterend",
+                  '<span class="text-xl font-bold text-primary">RA</span>'
+                );
+              }}
+            />
           </button>
           {/* Theme Toggle */}
           <div className="flex items-center gap-4">
