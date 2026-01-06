@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
       <Contact />

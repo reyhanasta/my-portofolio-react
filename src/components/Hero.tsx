@@ -20,9 +20,9 @@ const Hero = () => {
             <span className="text-primary block mt-2">Software Engineer</span>
           </h1>
 
-          <p className="text-base md:text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed px-4">
+          {/* <p className="text-base md:text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed px-4">
             Membangun sebuah aplikasi yang dapat membantu memberikan solusi.
-          </p>
+          </p> */}
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 px-4">
             <Button
