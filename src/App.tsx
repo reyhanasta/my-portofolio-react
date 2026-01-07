@@ -4,7 +4,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
 import ProjectDetail from "./components/ProjectDetail";
 import BackToTop from "./components/BackToTop";
 
@@ -12,7 +11,6 @@ function HomePage() {
   return (
     <>
       <Hero />
-      {/* <About /> */}
       <Skills />
       <Projects />
       <Contact />
