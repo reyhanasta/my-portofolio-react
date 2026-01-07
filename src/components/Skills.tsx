@@ -1,4 +1,5 @@
-import skillCategories from "@/data/SkillCategory";
+import skills from "@/data/SkillsList";
+import { Card, CardContent } from "./ui/card";
 
 export default function Skills() {
   return (
@@ -6,47 +7,27 @@ export default function Skills() {
       id="skills"
       className="min-h-screen flex items-center justify-center px-4 py-20"
     >
-      <div className="max-w-5xl mx-auto w-full">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 fade-in">
+      <div className="max-w-4xl mx-auto w-full">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">
           Skill & Expertise
         </h2>
-        {/* Skills Section */}
-        <div>
-          <div className="space-y-8">
-            {skillCategories.map((category) => (
-              <div key={category.category}>
-                <h4 className="text-xl font-semibold mb-4 text-primary">
-                  {category.category}
-                </h4>
-                <div
-                  className={`p-6 rounded-xl border bg-linear-to-br ${category.color}`}
-                >
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {category.skills.map((skill) => (
-                      <div
-                        key={skill.name}
-                        className="group flex items-center gap-3 p-3 rounded-lg bg-background/80 border 
-                                   md:hover:border-primary md:hover:bg-background 
-                                   md:transition-transform md:hover:-translate-y-1 
-                                   md:duration-200"
-                        style={{
-                          transform: "translateZ(0)",
-                          willChange: "transform",
-                        }}
-                      >
-                        <span className="text-2xl md:text-3xl md:group-hover:scale-110 md:transition-transform md:duration-200 flex-shrink-0">
-                          {skill.icon}
-                        </span>
-                        <span className="font-medium text-sm md:text-base truncate">
-                          {skill.name}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+          {skills.map((skill) => (
+            <Card
+              key={skill.name}
+              className="group md:hover:shadow-2xl md:hover:shadow-primary/20 transition-all duration-300 md:hover:-translate-y-1 border-slate-100 bg-white/15 "
+            >
+              <CardContent className="flex flex-col items-center justify-center p-6 h-full">
+                <div className="text-6xl mb-4 transition-transform duration-300 md:group-hover:scale-110 md:group-hover:rotate-3">
+                  {skill.icon}
                 </div>
-              </div>
-            ))}
-          </div>
+                <span className="font-medium text-foreground text-center">
+                  {skill.name}
+                </span>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

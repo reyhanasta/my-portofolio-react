@@ -19,7 +19,7 @@ const Projects = () => {
       className="py-16 md:py-24 bg-linear-to-b from-transparent via-primary/5 to-transparent"
     >
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16 fade-in">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-10 fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
             My Projects
           </h2>
@@ -29,7 +29,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
           {projects.map(
             (project, index) =>
               project.active && (
@@ -37,7 +37,7 @@ const Projects = () => {
                   key={index}
                   className="overflow-hidden border-border hover:shadow-2xl hover:shadow-primary/10 transition-transform duration-300 group fade-in-delay-1 hover:-translate-y-2"
                 >
-                  <div className="relative overflow-hidden aspect-video bg-linear-to-br from-primary/20 to-emerald-500/20">
+                  <div className="w-full h-40 relative overflow-hidden aspect-video bg-linear-to-br from-primary/20 to-emerald-500/20">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -51,7 +51,7 @@ const Projects = () => {
                     <CardTitle className="text-lg md:text-xl text-foreground group-hover:text-primary transition-colors">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="line-clamp-3 md:line-clamp-4 text-sm text-muted-foreground">
+                    <CardDescription className="line-clamp-2 md:line-clamp-3 text-sm text-muted-foreground">
                       {project.description}
                     </CardDescription>
                   </CardHeader>
@@ -69,54 +69,51 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    <div className="flex flex-col gap-2 pt-2">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-2 pt-1 ">
                       <Link to={`/projects/${project.slug}`} className="w-full">
                         <Button
-                          size="sm"
+                          size="icon-sm"
                           variant="default"
-                          className="w-full bg-primary hover:bg-primary/90 min-h-10"
+                          className="w-full bg-primary hover:bg-primary/90 min-h-10 col-span-2"
                         >
-                          <ArrowRight className="w-4 h-4 mr-2" />
-                          Lihat Detail
+                          <ArrowRight className="w-4 h-4 " />
+                          Detail
                         </Button>
                       </Link>
-
-                      <div className="grid grid-cols-2 gap-2">
-                        {project.demoUrl && (
-                          <Button
-                            size="sm"
-                            variant="outline"
-                            className="w-full hover:bg-accent min-h-10"
-                            asChild
+                      {project.githubUrl && (
+                        <Button
+                          size="icon-sm"
+                          variant="secondary"
+                          className="w-full hover:bg-accent min-h-10"
+                          asChild
+                        >
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
-                            <a
-                              href={project.demoUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <ExternalLink className="w-4 h-4 mr-2" />
-                              Demo
-                            </a>
-                          </Button>
-                        )}
-                        {project.githubUrl && (
-                          <Button
-                            size="sm"
-                            variant="outline"
-                            className="w-full hover:bg-accent min-h-10"
-                            asChild
+                            <FaGithub className="w-4 h-4 mr-2" />
+                            Code
+                          </a>
+                        </Button>
+                      )}
+                      {project.demoUrl && (
+                        <Button
+                          size="sm"
+                          variant="link"
+                          className="w-full hover:bg-accent min-h-10"
+                          asChild
+                        >
+                          <a
+                            href={project.demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
-                            <a
-                              href={project.githubUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <FaGithub className="w-4 h-4 mr-2" />
-                              Code
-                            </a>
-                          </Button>
-                        )}
-                      </div>
+                            <ExternalLink className="w-4 h-4 mr-2" />
+                            Demo
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
