@@ -12,7 +12,7 @@ export default function Skills() {
           Skill & Expertise
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 fade-in-delay-1">
           {skills.map((skill) => (
             <Card
               key={skill.name}

@@ -15,7 +15,7 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto space-y-6 md:space-y-8 animate-fade-in">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-foreground">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-foreground fade-in">
             Hello I'm Reyhan Asta, <br />
             <span className="text-primary block mt-2">Software Engineer</span>
           </h1>
@@ -24,7 +24,7 @@ const Hero = () => {
             Membangun sebuah aplikasi yang dapat membantu memberikan solusi.
           </p> */}
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 px-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 px-4 fade-in-delay-1">
             <Button
               size="lg"
               onClick={() => scrollToSection("projects")}
