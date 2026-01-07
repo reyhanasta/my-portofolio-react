@@ -24,8 +24,8 @@ const Projects = () => {
             My Projects
           </h2>
           <p className="text-base md:text-lg text-muted-foreground px-4">
-            Berisikan beberapa proyek yang pernah saya kerjakan baik secara
-            profesional ataupun personal.
+            Contains several projects that I have worked on, both professionally
+            and personally.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const Projects = () => {
                           className="w-full bg-primary hover:bg-primary/90 min-h-10 col-span-2"
                         >
                           <ArrowRight className="w-4 h-4 " />
-                          Detail
+                          Details
                         </Button>
                       </Link>
                       {project.githubUrl && (

@@ -16,12 +16,12 @@ interface Project {
 
 const projects: Project[] = [
   {
-    slug: "koperasi-management-system",
-    title: "Koperasi Management System",
+    slug: "micro-banking-system",
+    title: "Micro Banking System",
     description:
-      "Sistem manajemen koperasi dengan standar perbankan, dilengkapi modul simpan pinjam dan akuntansi terintegrasi untuk efisiensi operasional BTM.",
+      "Micro banking management system with banking standards, equipped with savings and loans and accounting modules.",
     fullDescription:
-      "Sistem manajemen koperasi yang dibangun khusus untuk orang tua saya yang mengelola koperasi BTM . Aplikasi ini mengadopsi standar perbankan dalam pengelolaan simpan pinjam, dengan modul akuntansi yang terintegrasi penuh. Sistem ini membantu mengelola data anggota, transaksi harian, perhitungan bunga otomatis, dan menghasilkan laporan keuangan yang akurat dan real-time.",
+      "A cooperative management system built specifically for my parents who manage a BTM cooperative. This application adopts banking standards in savings and loans management, with fully integrated accounting modules. The system helps manage member data, daily transactions, automatic interest calculations, and generates accurate real-time financial reports.",
     image: "/projects/koperasi/thumbnail.png",
     images: [
       "/projects/koperasi/thumbnail.png",
@@ -34,26 +34,26 @@ const projects: Project[] = [
       "/projects/koperasi/neraca.png",
       "/projects/koperasi/tutup-kas.png",
     ],
-    tags: ["Laravel", "MySQL", "Tailwind CSS", "PHP"],
+    tags: ["Laravel", "MySQL", "Tailwind CSS"],
     features: [
-      "Manajemen data anggota dan simpanan",
-      "Modul simpan pinjam dengan perhitungan bunga otomatis",
-      "Sistem akuntansi double-entry terintegrasi",
-      "Laporan keuangan real-time (neraca, laba rugi, arus kas)",
-      "Dashboard monitoring dengan grafik interaktif",
-      "Multi-user dengan role management",
+      "Member and savings data management",
+      "Savings and loans module with automatic interest calculations",
+      "Integrated double-entry accounting system",
+      "Real-time financial reports (balance sheet, profit/loss, cash flow)",
+      "Monitoring dashboard with interactive charts",
+      "Multi-user with role management",
     ],
     challenges:
-      "Challenge terbesar adalah memahami standar akuntansi perbankan dan mengimplementasikannya dalam sistem double-entry yang benar. Solusinya adalah konsultasi intensif dengan akuntan dan testing berkala dengan data riil.",
+      "The biggest challenge was understanding banking accounting standards and implementing them correctly in a double-entry system. The solution was intensive consultation with accountants and regular testing with real data.",
     active: true,
   },
   {
     slug: "auto-report",
     title: "AutoReport (SIMRS Khanza Integration)",
     description:
-      "Aplikasi reporting otomatis yang terintegrasi dengan SIMRS Khanza, menghasilkan laporan rawat jalan dalam format Excel sesuai kebutuhan klinik.",
+      "Automated reporting application integrated with SIMRS Khanza, generating outpatient reports in Excel format according to clinic needs.",
     fullDescription:
-      "Sistem pelaporan otomatis untuk rawat jalan yang terintegrasi langsung dengan database SIMRS Khanza. Aplikasi ini menggantikan proses manual pembuatan laporan yang memakan waktu 2-3 jam menjadi hanya beberapa klik. Data pasien, diagnosa, tindakan, dan pembayaran otomatis terekstrak dan diformat sesuai standar pelaporan dinas kesehatan.",
+      "An automated reporting system for outpatient care that is directly integrated with the SIMRS Khanza database. This application replaces the manual report creation process that takes 2-3 hours into just a few clicks. Patient data, diagnoses, actions, and payments are automatically extracted and formatted according to health department reporting standards.",
     image: "/projects/auto-report/thumbnail.png",
     images: [
       "/projects/auto-report/thumbnail.png",
@@ -62,19 +62,19 @@ const projects: Project[] = [
     ],
     tags: ["Laravel", "MySQL", "Chart.js", "Tailwind CSS"],
     features: [
-      "Integrasi langsung dengan database SIMRS Khanza",
-      "Export laporan ke Excel dengan format custom",
-      "Filter data berdasarkan tanggal, poli, dokter, dan jenis pembayaran",
-      "Visualisasi data dengan chart interaktif",
-      "Laporan statistik kunjungan dan diagnosa",
-      "History laporan yang sudah dibuat",
+      "Direct integration with SIMRS Khanza database",
+      "Export reports to Excel with custom format",
+      "Filter data by date, clinic, doctor, and payment type",
+      "Data visualization with interactive charts",
+      "Visit and diagnosis statistics reports",
+      "Report history tracking",
     ],
     githubUrl: "https://github.com/reyhanasta/kubr-report.git",
     challenges:
-      "Struktur database SIMRS Khanza yang kompleks dengan banyak relasi tabel. Solusi: mapping database secara detail dan optimasi query dengan indexing dan eager loading untuk performa maksimal.",
+      "Complex SIMRS Khanza database structure with many table relationships. Solution: detailed database mapping and query optimization with indexing and eager loading for maximum performance.",
     metrics: [
-      { label: "Penghematan Waktu", value: "2-3 jam → 5 menit" },
-      { label: "Query Time", value: "< 2 detik" },
+      { label: "Time Saved", value: "2-3 hours → 5 minutes" },
+      { label: "Query Time", value: "< 2 seconds" },
     ],
     active: false,
   },
@@ -82,9 +82,9 @@ const projects: Project[] = [
     slug: "fast-claim",
     title: "Fast Claim (BPJS Claim Organizer)",
     description:
-      "Tool automation untuk menyusun struktur folder dan merge file klaim BPJS Kesehatan sesuai standar SOP, mempercepat proses klaim hingga 3x lipat.",
+      "Automation tool to organize folder structure and merge BPJS Health claim files according to SOP standards.",
     fullDescription:
-      "Aplikasi web automation yang mengorganisir file-file klaim BPJS Kesehatan sesuai struktur SOP. Tool ini otomatis membuat folder berdasarkan nomor SEP, memindahkan file ke folder yang tepat, dan merge multiple PDF menjadi satu file sesuai ketentuan BPJS. Yang tadinya memakan waktu 1-2 jam untuk 50 klaim, sekarang bisa diselesaikan dalam 15-20 menit.",
+      "A web automation application that organizes BPJS Health claim files according to SOP structure. This tool automatically creates folders based on SEP numbers, moves files to the correct folders, and merges multiple PDFs into one file according to BPJS requirements. What used to take 1-2 hours for 50 claims, can now be completed in 15-20 minutes.",
     image: "/projects/fast-claim/thumbnail.png",
     images: [
       "/projects/fast-claim/thumbnail.png",
@@ -98,30 +98,31 @@ const projects: Project[] = [
       "/projects/fast-claim/backup-folder.png",
       "/projects/fast-claim/storage-settings.png",
     ],
-    tags: ["Laravel", "JavaScript", "MySQL", "Tailwind CSS"],
+    tags: ["Laravel", "MySQL", "Tailwind CSS"],
     features: [
-      "Auto-generate struktur folder sesuai SOP BPJS",
+      "Auto-generate folder structure according to BPJS SOP",
       "Drag & drop file management",
-      "PDF merger untuk menggabungkan dokumen klaim",
-      "Validasi kelengkapan berkas otomatis",
-      "Bulk processing untuk multiple klaim sekaligus",
-      "Log history untuk tracking proses klaim",
+      "PDF merger for claim document combination",
+      "Automatic file completeness validation",
+      "Bulk processing for multiple claims at once",
+      "Log history for claim process tracking",
     ],
     challenges:
-      "Handling PDF merge di server-side yang efficient dan tidak membebani memori. Solusi: implementasi queue system untuk batch processing dan chunking file besar.",
+      "Handling efficient PDF merging on the server-side without heavy memory usage. Solution: implementation of queue system for batch processing and chunking large files.",
     metrics: [
-      { label: "Efisiensi", value: "3x lebih cepat" },
-      { label: "Proses 50 Klaim", value: "1-2 jam → 15 menit" },
+      { label: "Efficiency", value: "3x faster" },
+      { label: "Process 50 Claims", value: "1-2 hours → 15 minutes" },
     ],
+    demoUrl: "https://youtu.be/4zJCxvivMr4?si=-Gm5S-9fpgdkWPL4",
     active: true,
   },
   {
     slug: "shift-scheduler",
     title: "Shift Scheduler",
     description:
-      "Aplikasi penjadwalan shift untuk petugas rekam medis dengan fitur kalender interaktif, notifikasi, dan swap shift yang mobile-responsive.",
+      "Shift scheduling application for medical records staff with interactive calendar, notifications, and mobile-responsive shift swap features.",
     fullDescription:
-      "Platform penjadwalan shift yang memudahkan koordinasi tim rekam medis klinik. Aplikasi ini menyediakan kalender interaktif untuk melihat jadwal, sistem notifikasi otomatis sebelum shift dimulai, dan fitur swap shift yang memungkinkan antar petugas bertukar jadwal dengan approval system. Dibangun mobile-first untuk akses mudah dari smartphone.",
+      "A shift scheduling platform that facilitates coordination of medical records staff at clinics. This application provides an interactive calendar to view schedules, automatic notification system before shifts start, and swap shift feature that allows staff to exchange schedules with approval workflow. Built mobile-first for easy access from smartphones.",
     image: "/projects/shift-scheduler.png",
     images: [
       "/projects/shift-scheduler.png",
@@ -132,19 +133,19 @@ const projects: Project[] = [
     ],
     tags: ["Vue", "Node.js", "Express", "JavaScript", "Tailwind CSS", "MySQL"],
     features: [
-      "Kalender interaktif dengan drag & drop",
-      "Notifikasi push sebelum shift dimulai",
-      "Sistem swap shift dengan approval workflow",
-      "Filter view per user atau per periode",
+      "Interactive calendar with drag & drop",
+      "Push notifications before shift starts",
+      "Swap shift system with approval workflow",
+      "Filter view per user or period",
       "Mobile-responsive design",
-      "Export jadwal ke PDF/Excel",
+      "Export schedule to PDF/Excel",
     ],
     demoUrl: "https://shift.astareyhan.my.id/",
     challenges:
-      "Real-time notification yang reliable tanpa WebSocket infrastructure yang berat. Solusi: menggunakan Firebase Cloud Messaging (FCM) untuk push notification yang efficient.",
+      "Reliable real-time notifications without heavy WebSocket infrastructure. Solution: using Firebase Cloud Messaging (FCM) for efficient push notifications.",
     metrics: [
       { label: "Mobile Usage", value: "85%" },
-      { label: "Response Time", value: "< 1 detik" },
+      { label: "Response Time", value: "< 1 second" },
     ],
     active: false,
   },

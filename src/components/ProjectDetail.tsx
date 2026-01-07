@@ -41,7 +41,7 @@ export default function ProjectDetail() {
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6 md:mb-8 min-h-10"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span className="text-sm md:text-base">Kembali ke Projects</span>
+          <span className="text-sm md:text-base">Back to Projects</span>
         </Button>
 
         {/* Hero Section */}
@@ -77,7 +77,7 @@ export default function ProjectDetail() {
                   className="inline-flex items-center justify-center gap-2 min-h-11"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  <span>Lihat Demo</span>
+                  <span>View Demo</span>
                 </a>
               </Button>
             )}
@@ -90,7 +90,7 @@ export default function ProjectDetail() {
                   className="inline-flex items-center justify-center gap-2 min-h-11"
                 >
                   <FaGithub className="w-4 h-4" />
-                  <span>Lihat Source</span>
+                  <span>View Source</span>
                 </a>
               </Button>
             )}
@@ -106,7 +106,7 @@ export default function ProjectDetail() {
         <Card className="mb-6 md:mb-8">
           <CardContent className="pt-6">
             <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
-              Tentang Project
+              About Project
             </h2>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed whitespace-pre-line">
               {project.fullDescription}
@@ -119,7 +119,7 @@ export default function ProjectDetail() {
           <Card className="mb-6 md:mb-8">
             <CardContent className="pt-6">
               <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">
-                Fitur Utama
+                Main Features
               </h2>
               <ul className="space-y-3">
                 {project.features.map((feature, index) => (
@@ -214,7 +214,7 @@ export default function ProjectDetail() {
               className="inline-flex items-center justify-center gap-2 min-h-11 w-full"
             >
               <ArrowLeft className="w-4 h-4" />
-              <span className="text-sm md:text-base">Kembali ke Projects</span>
+              <span className="text-sm md:text-base">Back to Projects</span>
             </Button>
           </button>
         </div>

@@ -12,8 +12,8 @@ export default function Contact() {
           Get In Touch
         </h2>
         <p className="text-base md:text-lg text-muted-foreground mb-8 md:mb-12 fade-in-delay-1 px-4">
-          Saya selalu terbuka untuk project baru, kolaborasi, atau sekadar
-          diskusi tentang teknologi. Feel free to reach out!
+          I am always open for new projects, collaboration, or just
+          technology discussions. Feel free to reach out!
         </p>
 
         {/* Social Links */}
