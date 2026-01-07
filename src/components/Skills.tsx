@@ -16,7 +16,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <Card
               key={skill.name}
-              className="group md:hover:shadow-2xl md:hover:shadow-primary/20 transition-all duration-300 md:hover:-translate-y-1 border-slate-100 bg-white/15 "
+              className="group md:hover:shadow-2xl md:hover:shadow-primary/40 transition-all duration-300 md:hover:-translate-y-1 border-slate-300 bg-white/15 "
             >
               <CardContent className="flex flex-col items-center justify-center p-6 h-full">
                 <div className="text-6xl mb-4 transition-transform duration-300 md:group-hover:scale-110 md:group-hover:rotate-3">
