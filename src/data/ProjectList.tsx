@@ -48,6 +48,45 @@ const projects: Project[] = [
     active: true,
   },
   {
+    slug: "invents",
+    title: "Asset Management System (Invents)",
+    description:
+      "Modern web-based asset management system with comprehensive tracking, categorization, and maintenance features built with Laravel 12 and React 19.",
+    fullDescription:
+      "A sophisticated asset management system built with Laravel 12 and React 19, leveraging Inertia.js for a seamless single-page application experience. The system provides comprehensive asset tracking, categorization, location management, and maintenance records with a focus on usability and modern development practices. It features complete CRUD operations, smart asset code generation, location tracking, comprehensive maintenance records, and QR code integration for asset identification.",
+    image: "/projects/invents/thumbnail.jpg",
+    images: [
+      "/projects/invents/asset_list.png",
+      "/projects/invents/asset_detail.png",
+      "/projects/invents/add_asset_form.png",
+      "/projects/invents/add_location_modal.png",
+    ],
+    tags: [
+      "Laravel",
+      "React",
+      "Inertia.js",
+      "TypeScript",
+      "MySQL",
+      "Tailwind CSS",
+      "Vite",
+      "Lucide React",
+    ],
+    features: [
+      "Complete asset CRUD operations with search and filtering",
+      "Smart asset code generation with category-based prefixes",
+      "Physical location tracking and management",
+      "Comprehensive maintenance record tracking",
+      "QR code generation for asset identification",
+      "Real-time search and filtering",
+      "Multi-level categorization system",
+    ],
+    challenges:
+      "Building a modern architecture that bridges Laravel and React seamlessly using Inertia.js. Ensuring proper state management between backend and frontend while maintaining security and performance. The solution involved implementing a robust Eloquent relationship structure and optimizing queries for large datasets.",
+
+    githubUrl: "https://github.com/reyhanasta/invents.git",
+    active: true,
+  },
+  {
     slug: "auto-report",
     title: "AutoReport (SIMRS Khanza Integration)",
     description:
@@ -80,11 +119,11 @@ const projects: Project[] = [
   },
   {
     slug: "fast-claim",
-    title: "Fast Claim (BPJS Claim Organizer)",
+    title: "FastClaim (BPJS Claim Organizer)",
     description:
-      "Automation tool to organize folder structure and merge BPJS Health claim files according to SOP standards.",
+      "Modern web application designed to streamline and automate BPJS Health claim document processing with advanced PDF manipulation and smart document organization.",
     fullDescription:
-      "A web automation application that organizes BPJS Health claim files according to SOP structure. This tool automatically creates folders based on SEP numbers, moves files to the correct folders, and merges multiple PDFs into one file according to BPJS requirements. What used to take 1-2 hours for 50 claims, can now be completed in 15-20 minutes.",
+      "FastClaim is a modern web application designed to streamline and automate the management of BPJS Health claim documents for advanced healthcare facilities. It automatically extracts key data from SEP PDFs using OCR, merges multiple documents into standardized files, and organizes them in structured directories. The system features real-time analytics, automated backup processing, role-based access control, and a modern UI built with Flux UI and Tailwind CSS 4.",
     image: "/projects/fast-claim/thumbnail.png",
     images: [
       "/projects/fast-claim/thumbnail.png",
@@ -98,56 +137,37 @@ const projects: Project[] = [
       "/projects/fast-claim/backup-folder.png",
       "/projects/fast-claim/storage-settings.png",
     ],
-    tags: ["Laravel", "MySQL", "Tailwind CSS"],
+    tags: [
+      "Laravel 12.x",
+      "Livewire 3.x",
+      "PHP 8.2+",
+      "Flux UI",
+      "Tailwind CSS 4",
+      "Vite",
+      "MySQL",
+      "PDF Processing",
+    ],
     features: [
-      "Auto-generate folder structure according to BPJS SOP",
-      "Drag & drop file management",
-      "PDF merger for claim document combination",
+      "Smart upload with automatic data extraction using OCR (Poppler Utils)",
+      "One-click PDF merging for SEP, Medical Resume, Billing, Lab Results, and LIP documents",
+      "Structured file organization by year, month/period, care type, and dates",
+      "Automated backup processing using Laravel Queues",
+      "Role-based access control (Admin: full control, Operator: claim processing)",
+      "Real-time dashboard with claim statistics and monitoring",
+      "Drag & drop file management interface",
       "Automatic file completeness validation",
-      "Bulk processing for multiple claims at once",
-      "Log history for claim process tracking",
+      "Bulk processing for multiple claims simultaneously",
+      "Comprehensive log history for claim process tracking",
     ],
     challenges:
-      "Handling efficient PDF merging on the server-side without heavy memory usage. Solution: implementation of queue system for batch processing and chunking large files.",
+      "Efficient PDF processing on server-side without heavy memory usage. Implemented queue system for batch processing and chunking large files. Integration with Poppler Utils for OCR text extraction while maintaining system responsiveness.",
     metrics: [
       { label: "Efficiency", value: "3x faster" },
       { label: "Process 50 Claims", value: "1-2 hours → 15 minutes" },
+      { label: "Query Time", value: "< 1 second" },
     ],
     demoUrl: "https://youtu.be/4zJCxvivMr4?si=-Gm5S-9fpgdkWPL4",
     active: true,
-  },
-  {
-    slug: "shift-scheduler",
-    title: "Shift Scheduler",
-    description:
-      "Shift scheduling application for medical records staff with interactive calendar, notifications, and mobile-responsive shift swap features.",
-    fullDescription:
-      "A shift scheduling platform that facilitates coordination of medical records staff at clinics. This application provides an interactive calendar to view schedules, automatic notification system before shifts start, and swap shift feature that allows staff to exchange schedules with approval workflow. Built mobile-first for easy access from smartphones.",
-    image: "/projects/shift-scheduler.png",
-    images: [
-      "/projects/shift-scheduler.png",
-      "/projects/shift-scheduler/calendar.png",
-      "/projects/shift-scheduler/swap.png",
-      "/projects/shift-scheduler/notification.png",
-      "/projects/shift-scheduler/mobile.png",
-    ],
-    tags: ["Vue", "Node.js", "Express", "JavaScript", "Tailwind CSS", "MySQL"],
-    features: [
-      "Interactive calendar with drag & drop",
-      "Push notifications before shift starts",
-      "Swap shift system with approval workflow",
-      "Filter view per user or period",
-      "Mobile-responsive design",
-      "Export schedule to PDF/Excel",
-    ],
-    demoUrl: "https://shift.astareyhan.my.id/",
-    challenges:
-      "Reliable real-time notifications without heavy WebSocket infrastructure. Solution: using Firebase Cloud Messaging (FCM) for efficient push notifications.",
-    metrics: [
-      { label: "Mobile Usage", value: "85%" },
-      { label: "Response Time", value: "< 1 second" },
-    ],
-    active: false,
   },
 ];
 
