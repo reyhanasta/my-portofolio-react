@@ -29,7 +29,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {projects.map(
             (project, index) =>
               project.active && (
@@ -48,7 +48,7 @@ const Projects = () => {
                   </div>
 
                   <CardHeader>
-                    <CardTitle className="text-lg md:text-xl text-foreground group-hover:text-primary transition-colors">
+                    <CardTitle className="text-lg md:text-lg text-foreground group-hover:text-primary transition-colors">
                       {project.title}
                     </CardTitle>
                     <CardDescription className="line-clamp-2 md:line-clamp-3 text-sm text-muted-foreground">

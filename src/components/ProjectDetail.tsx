@@ -197,7 +197,8 @@ export default function ProjectDetail() {
 
         {/* Bottom CTA */}
         <div className="flex justify-center pt-6 md:pt-8 px-4">
-          <button
+          <Button
+            variant={"outline"}
             onClick={() => {
               navigate("/");
               setTimeout(() => {
@@ -209,14 +210,9 @@ export default function ProjectDetail() {
             }}
             className="w-full sm:w-auto"
           >
-            <Button
-              variant="outline"
-              className="inline-flex items-center justify-center gap-2 min-h-11 w-full"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span className="text-sm md:text-base">Back to Projects</span>
-            </Button>
-          </button>
+            <ArrowLeft className="w-4 h-4" />
+            <span className="text-sm md:text-base">Back to Projects</span>
+          </Button>
         </div>
       </div>
     </div>
